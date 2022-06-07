@@ -1,0 +1,255 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/constLayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_list"
+    tools:context=".GameBoard">
+
+    <LinearLayout
+        android:layout_width="365dp"
+        android:layout_height="62dp"
+        android:layout_marginTop="24dp"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.504"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <ImageView
+            android:id="@+id/playerImage"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/blue" />
+
+        <TextView
+            android:id="@+id/scoreText1"
+            android:layout_width="25dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="0"
+            android:textSize="36sp" />
+
+        <ImageButton
+            android:id="@+id/returnHomeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@android:color/transparent"
+            app:srcCompat="@drawable/whitehouse" />
+
+        <TextView
+            android:id="@+id/scoreText2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="right"
+            android:text="0"
+            android:textSize="36sp" />
+
+        <ImageView
+            android:id="@+id/enemyImage"
+            android:layout_width="72dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            app:srcCompat="@drawable/red" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/table"
+        android:layout_width="362dp"
+        android:layout_height="561dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:layout_marginBottom="16dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent">
+
+        <LinearLayout
+            android:id="@+id/top_layer"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/one_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent"
+                android:textSize="14sp" />
+
+            <Button
+                android:id="@+id/button18"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/two_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/button19"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/three_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/top_line_layer"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button16"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/middle_layer"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/four_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/button20"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/five_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/button21"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/six_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/bottom_line_layer"
+            android:layout_width="match_parent"
+            android:layout_height="6dp"
+            android:background="#FFFFFF"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/button17"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:backgroundTint="#FFFFFF" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/buttom_layer"
+            android:layout_width="match_parent"
+            android:layout_height="182dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/seven_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/button22"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/eight_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+
+            <Button
+                android:id="@+id/button23"
+                android:layout_width="1dp"
+                android:layout_height="match_parent"
+                android:layout_weight="0.2"
+                android:background="@drawable/white_background"
+                android:backgroundTint="#FFFFFF" />
+
+            <Button
+                android:id="@+id/nine_button"
+                android:layout_width="88dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:onClick="buttonClicked"
+                android:textColor="@android:color/transparent" />
+        </LinearLayout>
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

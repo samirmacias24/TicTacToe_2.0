@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">TicTacToe2</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="easy">Easy</string>
+    <string name="medium">Medium</string>
+    <string name="hard">Hard</string>
+    <string name="you_lose">You Lose!</string>
+    <string name="_1_player">1 Player</string>
+    <string name="_2_players">2 Players</string>
+    <string name="select_your_character">Select your character!</string>
+    <string name="select_your_characters">Select your characters!</string>
+    <string name="p1">P1</string>
+    <string name="p2">P2</string>
+    <string name="on">ON</string>
+    <string name="off">OFF</string>
+    <string name="music">Music</string>
+</resources>
