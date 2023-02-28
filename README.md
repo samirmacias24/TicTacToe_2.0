@@ -1,5 +1,5 @@
-# Tic-Tac-Toe2
-TicTacToe Application Version 2
+# Tic-Tac-Toe 2.0
+TicTacToe Application Version 2.0
 
 This application is an improvement from the previous version (Watermelon Tic-Tac-Toe). It provides a completely new look and experience. 
 It introduces new selectable characters and a faster and more efficient A.I. Additionally, the lag experienced in the previous iteration was reduced/removed
